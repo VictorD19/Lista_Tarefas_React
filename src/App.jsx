@@ -5,6 +5,8 @@ import './App.css';
 
 import ListTask from './Components/ListTaks';
 import NewTaks from './Components/NewTask';
+import Title from './Components/Title';
+
 
 
 
@@ -56,6 +58,7 @@ function App() {
     return (
 
     <div className = "container" >
+        <Title  />
         <NewTaks addTask={additionNewTask}/>
         <ListTask list={listTask} 
                   statusTask={completeTaksClick}
