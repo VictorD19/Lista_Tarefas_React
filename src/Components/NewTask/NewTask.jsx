@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import './nwtask.css'
-import Button from'./Button'
+import Button from'../Button/Button'
 
 const NewTaks = ({addTask}) => {
    
