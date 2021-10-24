@@ -36,3 +36,6 @@
 .completed{
     color: #14dd14;
 }
+.hovered{
+    transform: scale(1.04);
+}

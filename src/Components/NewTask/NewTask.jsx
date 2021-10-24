@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 
 import './nwtask.css'
 import Button from'../Button/Button'
+import {additionNewTask} from '../../Utils/funtions'
 
-const NewTaks = ({addTask}) => {
+const NewTaks = ({list,setList}) => {
    
     const [valueInput,setValue] = useState("")
 
@@ -12,7 +13,7 @@ const NewTaks = ({addTask}) => {
     }
 
     const handlersetTask = ()=>{
-         addTask(valueInput)
+        additionNewTask(valueInput,list,setList)
          setValue('')
         
     }
